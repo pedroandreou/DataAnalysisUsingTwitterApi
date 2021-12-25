@@ -15,6 +15,9 @@ Data analysis will be performed following the data science process which will be
 ## 🚀 Building and Running
 Open the [HTML file](https://github.com/pedroandreou/DataAnalysisUsingTwitterApi/blob/main/python.html) or Run the [Jupyter Notebook](https://github.com/pedroandreou/DataAnalysisUsingTwitterApi/blob/main/python.ipynb)
 
+## ⚠ Important
+More info about my project can be found in my [portfolio](https://pedroandreou.github.io/#DataAnalysisTweepy)
+
 ## Author  
 👨🏼 Petros Andreou
 
