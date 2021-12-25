@@ -14515,20 +14515,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Abstract">Abstract<a class="anchor-link" href="#Abstract">&#182;</a></h1><p>Twitter is among the most significant social media platforms. It has been widely regarded as a universal tool for spreading information, exchanging articles, and engaging with individuals all over the world. As a result, such a massive, high-velocity flow of Twitter data generated every second has the potential to be used for major analysis and interpretation.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><p>Since the last decade, Twitter has grown in popularity as a microblogging and real-time social networking site. Twitter is an excellent way to stay socially connected with friends, family, and coworkers, with over 330 million active users and over 500 million posts every day [1]. An account's popularity is measured by the number of its followers. Twitter uses posts to allow users to express themselves and communicate with other users on the network (also called tweets). Each tweet has a character limit of 140 characters, including spaces. A tweet can essentially be made up of simple text, URLs, usernames, and hashtags. In this project, data from three influencer accounts is extracted, pre-processed and analyzed. The chosen technology industry related users are Tim Cook (CEO of Apple), Sundar Pichai (CEO of Google and Alphabet) and Satya Nadella (Chairman and CEO of Microsoft Corporation).</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Data-Gathering-and-Pre-processing">Data Gathering and Pre-processing<a class="anchor-link" href="#Data-Gathering-and-Pre-processing">&#182;</a></h1><h3 id="Extracting-the-data-from-Twitter">Extracting the data from Twitter<a class="anchor-link" href="#Extracting-the-data-from-Twitter">&#182;</a></h3><p>The first step to extracting data from Twitter is to apply for a developer account. Once the account is approved, we can generate the keys and tokens required to set up the connection. The connection to our Twitter App is set up using the OAuthHandler() class and its set_access_token() function. Then we call the Twitter API through the API() function. We also import the required libraries, such as tweepy, which is an open source Python package that gives us a convenient way to access the Twitter API. Tweepy includes a set of classes and methods that represent Twitter's models and API endpoints.</p>
-
+<h1 id="Data-Gathering-and-Pre-processing">Data Gathering and Pre-processing<a class="anchor-link" href="#Data-Gathering-and-Pre-processing">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -14630,13 +14617,6 @@ What is your access token secret? ········
 </div>
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For the extraction of the tweets and the relevant information, we implemented the function extract_tweets_as_df(username). The function accepts the influencer's username and returns a pandas dataframe with the required columns. <br>
-Tweepy cursors simplify working with paginated results. Pagination is used by many Twitter API calls to return their results. Each method defaults to returning the first page, which often has a few dozen items. In order to use a cursor, we first choose the API method, the desired user and the quantity of objects we wish to fetch. The API method used with the cursor is user_timeline() which returns a collection of the most recent Tweets posted by the user indicated. The allowed types in our dataframe are strings and integers and therefore any other values will be replaced with NaN.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -16027,9 +16007,7 @@ Unexpected parameter: id
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Exploratory-Data-Analysis-(EDA)">Exploratory Data Analysis (EDA)<a class="anchor-link" href="#Exploratory-Data-Analysis-(EDA)">&#182;</a></h1><p>The primary goal of EDA is to assist in the analysis of data. It can aid in the detection of evident errors, as well as a better understanding of data patterns, the detection of outliers or unusual events, and the discovery of interesting relationships between variables. It reveals trends, patterns, and connections that might otherwise go unnoticed.</p>
-<p>Firstly, to make the exploratory data analysis simpler, we merge the three dataframes into one using the pandas concat() function.</p>
-
+<h1 id="Exploratory-Data-Analysis-(EDA)">Exploratory Data Analysis (EDA)<a class="anchor-link" href="#Exploratory-Data-Analysis-(EDA)">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -17613,12 +17591,6 @@ We come to the conclusion that all three of our users are mostly producing origi
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Favorite-Users">Favorite Users<a class="anchor-link" href="#Favorite-Users">&#182;</a></h3>
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Afterwards, we explore who are the favourite users of the three influencers. The get_user_favorites() function is implemented. Tweepy's get_favorites() function returns the favorite statuses of the specified user. Our function adds all the authors of the favorite statuses to a list. The list is then converted to a set in order to avoid duplicates and the set containing all the favorite users is returned by the function.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -17809,12 +17781,6 @@ We come to the conclusion that all three of our users are mostly producing origi
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In order to check whether our influencers have any common favorite users, we use python's intersection() method. The method returns a set that contains the items that exist in all the sets we wish to compare. The method returned an empty set which means that there are no common favorite users among the three influencers.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -17956,12 +17922,6 @@ Name: lang, dtype: int64</pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Correlation-between-likes-and-retweets">Correlation between likes and retweets<a class="anchor-link" href="#Correlation-between-likes-and-retweets">&#182;</a></h3>
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Following, we want to see if there is any correlation between the amount of likes and the amount of the retweets. To do that, we used a scatter plot on which we plotted a regression line to make the visualization easier to understand. The line showed that the two variables have a linear relationship. The slope of the line also showed that this relationship is positive. This means that as one variable increases, the other variable increases as well.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -18006,12 +17966,6 @@ Name: lang, dtype: int64</pre>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Most-Used-Hashtags">Most Used Hashtags<a class="anchor-link" href="#Most-Used-Hashtags">&#182;</a></h3>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Next, we want to investigate the hashtags used in the influencers' tweets. The practice of prefixing a word or an unspaced sentence in a tweet with the "#" symbol to highlight the primary concept or substance of that tweet is known as hashtagging. Twitter automatically groups together all tweets with the same hashtags to aid in topic-specific classification and searches. The first step to that is to create a list of all the tweets.</p>
-
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -18511,12 +18465,6 @@ AbilitySummit
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We use a bar chart to visualize which hashtags are mostly used by our users. The hashtag #COVID is mostly used thoughout the latest tweets.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -18562,12 +18510,6 @@ AbilitySummit
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Most-Mentioned-Users">Most Mentioned Users<a class="anchor-link" href="#Most-Mentioned-Users">&#182;</a></h3>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Similarly, we want to retrieve the most mentioned accounts of each user, so we iterate through the tweets and add to a list every word that begins with the character "@". This is implemented in the function get_mentioned_users(username) that returns a list of all the mentioned users.</p>
-
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -18876,12 +18818,6 @@ nytimes
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Sundar Pichai's most mentioned accounts are YouTube and Google. As he is the CEO of these two companies, it is more than expected. It should also be noted that other accounts also owned by Google seem to be occupying the top spots in Pichai's most mentioned users list. Therefore, it is valid to assume that he uses his Twitter account more for promotional purposes rather than socialising with other users.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -19020,12 +18956,6 @@ GoldenGlobes
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Next, we see Tim Cook's most mentioned users. Malala and TedLasso are the most mentioned and taking into account the rest of his most mentioned users,we are led to believe that unlike his peer Pichai; Cook interacts far more frequently with Twitter personalities rather than companies.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -19311,12 +19241,6 @@ jennylayfluffy
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Satya Nadella's most mentioned account is Microsoft which is expected as he is the CEO of Microsoft Corporation. Similar conclusions as those drawn for Tim Cook's most mentioned users can be made for Nadella's most mentioned users since they both interact with many Twitter personalities as well as company accounts. This means that Cook and Nadella use Twitter for its initial intended purpose, socialising, more than Pichai who seems to prefer to use his account to promote his company.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -19480,12 +19404,6 @@ jennylayfluffy
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Finishing the exploratory data analysis, we have a look at the date each account was created by fetching the created_at attrubute for each user and displaying the results in a bar chart. Sundar Pichai's account was created first and Satya Nadella's account was created roughly a year later. Last one to create an account was Tim Cook. Although Cook was the last one to create his account, he has the biggest follower count and owns the the majority of the top most liked and retweeted tweets. Satya Nadella's account is the least popular account in all observed aspects which proves that the creation date of an account has no correlation with the account's popularity as he was the second one to create his account. The aforementioned claim is further supported by Sundar Pichai's account which was the first one created and yet ended up with the second highest follower count and the top most liked and retweeted tweets.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -19617,20 +19535,6 @@ jennylayfluffy
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Network-Analysis">Network Analysis<a class="anchor-link" href="#Network-Analysis">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The Network Analysis shows the many ways that a network is connected</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The shortest_path function calculates the shortest possible series of edges and nodes which stand between any two nodes. This is useful especially for large network visualisations as it is harder to see otherwise.
-The shortest path can be used to establish who is a friend-of-friends.
-There may be more than one shortest possible path but the function only returns one way.</p>
-
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -20952,15 +20856,6 @@ Assortativity: -1.0
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Final-Overall-Network">Final Overall Network<a class="anchor-link" href="#Final-Overall-Network">&#182;</a></h2>
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We concatenate the first column of each user's network dataframe with itertools.chain() method and convert it to a list.
-We apply the same method to the second column of each user's network dataframe.
-The reason why we do this is we want to have all 3 different columns of source column of each user combined as well as the target column.
-Therefore, we add the overall source and target lists to the final network's source and target columns respectively.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -21048,13 +20943,6 @@ Graph not connected: infinite path length
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In each one of the three mini networks that make up the main network, the shortest path between the nodes is always an external node,the egde and the node of the influencer. This shows us that the external nodes of the networks are not connected with each other and therefore do not share any friend-of-friends other than the influencer they follow. The mini networks are not connected with each other and therefore they do not have shortest paths between them.
-If we were to take a much larger amount of users from the following list, we would potentially find a shortest path between Tim Cook and Sundar Pichai and Tim Cook and Satya Nadella as Cook follows them both.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -21091,12 +20979,6 @@ If we were to take a much larger amount of users from the following list, we wou
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A degree distribution is a frequency count of the occurence of each degree. The degree of a node reflects how many connections the node has. As we can see in the histogram below, the degree of 1 is repeated 30 times(frequency) in the network and having observed the topology of our main network, this makes perfect sense as the external nodes of each mini network all have only 1 degree which represents a connection. The internal nodes which represent the influencers we are investigating have a degree of 10 and therefore the frequency is 3. A degree distribution is a simple measure that sheds light on the connectivity of a network. If we were to only look at the histogram we would immediately realise that there are 3 users with 10 degrees(connections) and 30 users with one degree so the latter users are far less connected within the network than the former.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -21150,12 +21032,6 @@ Degree Distribution:
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The cluster coefficient measures the degree that nodes in our network tend to cluster together. The cluster coefficient value is between 0 and 1 with 0 indicating low degrees and therefore a low or nonexistent tendency to form clusters. Clusters help in categorising accounts in a network and tying them together to create close knit communities that share interests in social network platforms. The dataset we are working with has no clusters and all values are zero which is predictable as the most that each following list has been recorded to have in common is the influencer they follow.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -21209,14 +21085,6 @@ Cluster Coeffiecient: {&#39;satyanadella&#39;: 0, &#39;yusuf_i_mehdi&#39;: 0, &#
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Betweeness centrality indicates which nodes act as bridges in a network by finding the shortest paths and counting how many times each node falls on these paths.What this tells us is which users influence the flow of the network.
-This network is made up of three individual networks as they do not have any connections between them but the results of the betweeneness_centrality function in this section and the other sections shows us what we can already observe with the naked eye as the visualisation of our network is not complex; we can see that there is one person in each network that acts as the influence(as the value is not zero) and these are Tim Cook, Sundar Pichai and Satya Nadella.
-It comes as no surprise as the intersection showed us that the influencers we selected have no mutual friends(in the data we collected). If the users from the following list of an influencer followed each other then this would be reflected in these results with values above zero and the more that this happens the more the network will start looking more connected and complex. This has not been possible to observe due to the small amount of data we used.</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -21297,18 +21165,6 @@ Assortativity: -1.0
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1><p>[1] <a href="https://en.wikipedia.org/wiki/Twitter">https://en.wikipedia.org/wiki/Twitter</a></p>
-<p>[2]Hedden, S. (2021). How to download and visualize your Twitter network. [online] Medium. Available at: <a href="https://towardsdatascience.com/how-to-download-and-visualize-your-twitter-network-f009dbbf107b">https://towardsdatascience.com/how-to-download-and-visualize-your-twitter-network-f009dbbf107b</a>.
-‌</p>
-<p>[3]Techie Delight. (2016). Check for an empty Set in Python. [online] Available at: <a href="https://www.techiedelight.com/check-for-empty-set-python/">https://www.techiedelight.com/check-for-empty-set-python/</a> [Accessed 29 Nov. 2021].
-‌</p>
-<p>[4]Anon, (2020). Ways to concatenate multiple lists in Python - AskPython. [online] Available at: <a href="https://www.askpython.com/python/list/concatenate-multiple-lists-in-python">https://www.askpython.com/python/list/concatenate-multiple-lists-in-python</a> [Accessed 29 Nov. 2021].
-‌</p>
-
-</div>
 </div>
 </body>
 
