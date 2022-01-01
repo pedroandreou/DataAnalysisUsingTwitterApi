@@ -18,15 +18,7 @@ Open the [HTML file](https://github.com/pedroandreou/DataAnalysisUsingTwitterApi
 ## ⚠ Important
 More info about my project can be found in my [portfolio](https://pedroandreou.github.io/#DataAnalysisTweepy)
 
-## Author  
-<!-- Actual text -->
-
-[![LinkedIn][1.1]][1] Petros Andreou
-
-<!-- Icons -->
-
-[1.1]: https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/linkedin-3-16.png (LinkedIn icon without padding)
-
-<!-- Links to your social media accounts -->
-
-[1]: https://www.linkedin.com/in/petrosandreou80/
+## Author 
+<a href="https://img.shields.io/badge/Petros LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  <img align="center" src="https://img.shields.io/badge/Petros LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
