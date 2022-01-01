@@ -19,7 +19,14 @@ Open the [HTML file](https://github.com/pedroandreou/DataAnalysisUsingTwitterApi
 More info about my project can be found in my [portfolio](https://pedroandreou.github.io/#DataAnalysisTweepy)
 
 ## Author  
-👨🏼 Petros Andreou
+<!-- Actual text -->
 
-Github: [@Petros](https://github.com/pedroandreou)  
-LinkedIn: [@Petros](https://www.linkedin.com/in/petrosandreou80/)
+[![LinkedIn][1.1]][1] Petros Andreou
+
+<!-- Icons -->
+
+[1.1]: https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/linkedin-3-16.png (LinkedIn icon without padding)
+
+<!-- Links to your social media accounts -->
+
+[1]: https://www.linkedin.com/in/petrosandreou80/
